@@ -626,6 +626,10 @@ video {
   height: 100vh;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -650,6 +654,10 @@ video {
   gap: 5px;
 }
 
+.gap-\[6\.4px\] {
+  gap: 6.4px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -665,6 +673,11 @@ video {
 .bg-\[\#CFE9FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(207 233 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#F2F9FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 249 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#F3D2D2\] {
@@ -690,12 +703,24 @@ video {
   padding-bottom: 10px;
 }
 
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
+.pl-\[20px\] {
+  padding-left: 20px;
+}
+
 .pt-\[15px\] {
   padding-top: 15px;
 }
 
 .pt-\[7px\] {
   padding-top: 7px;
+}
+
+.pt-\[8px\] {
+  padding-top: 8px;
 }
 
 .pt-\[97px\] {
@@ -710,8 +735,36 @@ video {
   font-size: .844375rem;
 }
 
+.text-\[0\.608125rem\] {
+  font-size: 0.608125rem;
+}
+
 .text-\[1\.015625rem\] {
   font-size: 1.015625rem;
+}
+
+.text-\[1\.7625rem\] {
+  font-size: 1.7625rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.leading-\[1\.25\] {
+  line-height: 1.25;
+}
+
+.leading-\[1\.29\] {
+  line-height: 1.29;
 }
 
 .leading-\[1\] {
@@ -1123,16 +1176,9 @@ p > strong{
                      what we expect
 ===========================================================*/
 
-.wd-coktail-content-wrapper{
-  max-width: 70rem;
+.wd-coktail-product-wrapper{
+  max-width: 40rem;
   margin: 0 auto;
-  border-radius: 3rem;
-}
-
-.cocktacil-product-img{
-  position: absolute;
-  left: 50%;
-  bottom: 0;
 }
 
 .cocktail-content{

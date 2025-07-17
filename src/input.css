@@ -280,16 +280,9 @@ p > strong{
 /*==========================================================
                      what we expect
 ===========================================================*/
-.wd-coktail-content-wrapper{
-  max-width: 70rem;
+.wd-coktail-product-wrapper{
+  max-width: 40rem;
   margin: 0 auto;
-  border-radius: 3rem;
-}
-
-.cocktacil-product-img{
-  position: absolute;
-  left: 50%;
-  bottom: 0;
 }
 
 .cocktail-content{
