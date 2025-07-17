@@ -1227,6 +1227,13 @@ p > strong{
   }
 }
 
+@media (max-width: 350px) {
+  .wd-section-btn a{
+    font-size: 20px;
+    min-width: 15rem;
+  }
+}
+
 /*==========================================================
                      Header
 ===========================================================*/
@@ -1404,12 +1411,12 @@ p > strong{
     height: 250px;
   }
 
-  .md\:h-\[80px\] {
-    height: 80px;
+  .md\:h-\[70vh\] {
+    height: 70vh;
   }
 
-  .md\:h-screen {
-    height: 100vh;
+  .md\:h-\[80px\] {
+    height: 80px;
   }
 
   .md\:rounded-3xl {
@@ -1436,6 +1443,10 @@ p > strong{
 
   .lg\:h-\[500px\] {
     height: 500px;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:rounded-\[3rem\] {

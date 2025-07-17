@@ -4,20 +4,39 @@
 
         // product timeline animation
         $(window).on('scroll', function() {
-            $('.single-timeline').each(function() {
-                var elementTop = $(this).offset().top;
-                var elementHeight = $(this).outerHeight();
-                var windowHeight = $(window).height();
-                var scrollTop = $(window).scrollTop();
+            var wrapper = $('.product-timeline-wrapper');
+            var wrapperTop = wrapper.offset().top;
+            var wrapperHeight = wrapper.outerHeight();
+            var windowHeight = $(window).height();
+            var scrollTop = $(window).scrollTop();
 
-                // Calculate when the element is 30% from the bottom of the viewport
-                if (scrollTop + windowHeight >= elementTop + (elementHeight * 5)) {
-                    $(this).addClass('active');
+            var distance = scrollTop + windowHeight - wrapperTop;
+            var percent = distance / wrapperHeight;
+
+            // Limit to 0–1
+            percent = Math.max(0, Math.min(1, percent));
+
+            // Set .timeline-line height
+            wrapper.find('.timeline-line').css({
+                height: (percent * 100) + '%'
+            });
+
+            // Add active class to each .single-timeline
+            $('.single-timeline').each(function() {
+                var elTop = $(this).offset().top;
+                var elHeight = $(this).outerHeight();
+                var distance = scrollTop + windowHeight - elTop;
+                var elPercent = distance / elHeight;
+
+                if (elPercent > 5) {
+                $(this).addClass('active');
                 } else {
-                    $(this).removeClass('active');
+                $(this).removeClass('active');
                 }
             });
         });
+
+
 
 
         // product 360 rotation on scroll
