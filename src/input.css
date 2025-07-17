@@ -187,8 +187,24 @@ html {
   font-style: normal;
   font-size: 1.7625rem;
   line-height: 1.7625rem;
-  letter-spacing: 0%;
   text-align: center;
+}
+
+
+.wd-section-btn a{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28.1px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--site-primary-color);
+  box-shadow: 0rem 0.109375rem 0.21875rem 0rem #00000040;
+  border-radius: 0.81875rem;
+  padding: 0.69rem 1.471rem;
+  transition: .3s ease-in-out;
+  min-width: 19rem;
 }
 
 
@@ -230,3 +246,28 @@ html {
                      what we expect
 ===========================================================*/
 
+.wd-what-we-expect .wd-section-btn a{
+  background-color: #CC9196;
+}
+.wd-what-we-expect .wd-section-btn a:hover{
+  background-color: #db7c84;
+  transition: .3s ease-in-out;
+}
+
+.button-list li{
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 100%;
+  letter-spacing: -1%;
+}
+
+.button-list li{
+  position: relative;
+  padding-left: 10px;
+}
+.button-list li::before{
+  content: url("right-sign.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
