@@ -211,6 +211,17 @@ p > strong{
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .wd-section-headline{
+      font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .wd-section-headline{
+      font-size: 2.2rem;
+      padding-bottom: 10px;
+  }
+}
 @media (min-width: 120.0625rem) {
   html {
     font-size: 120%;

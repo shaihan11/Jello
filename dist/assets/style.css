@@ -630,12 +630,28 @@ video {
   height: 100%;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[45vh\] {
+  height: 45vh;
+}
+
 .w-\[70\%\] {
   width: 70%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[50vh\] {
+  width: 50vh;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .resize {
@@ -668,6 +684,10 @@ video {
 
 .rounded-\[15px\] {
   border-radius: 15px;
+}
+
+.rounded-\[2rem\] {
+  border-radius: 2rem;
 }
 
 .border {
@@ -718,9 +738,9 @@ video {
   padding-right: .625rem;
 }
 
-.px-\[1\.2rem\] {
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+.px-\[\.84rem\] {
+  padding-left: .84rem;
+  padding-right: .84rem;
 }
 
 .py-\[10px\] {
@@ -733,9 +753,9 @@ video {
   padding-bottom: 110px;
 }
 
-.px-\[\.84rem\] {
-  padding-left: .84rem;
-  padding-right: .84rem;
+.px-\[1\.32rem\] {
+  padding-left: 1.32rem;
+  padding-right: 1.32rem;
 }
 
 .pb-\[10px\] {
@@ -776,6 +796,14 @@ video {
 
 .pt-\[97px\] {
   padding-top: 97px;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
 }
 
 .text-center {
@@ -1172,6 +1200,19 @@ p > strong{
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  .wd-section-headline{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wd-section-headline{
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+  }
+}
+
 @media (min-width: 120.0625rem) {
   html {
     font-size: 120%;
@@ -1361,5 +1402,10 @@ p > strong{
 
   .lg\:rounded-\[3rem\] {
     border-radius: 3rem;
+  }
+
+  .lg\:px-\[2rem\] {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
