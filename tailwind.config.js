@@ -4,6 +4,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 primary: "var(--primary-font)",
+                secondary: "var(--secondary-font)",
             },
             fontSize: {},
             colors: {
