@@ -172,12 +172,12 @@ html {
   font-size: 100%;
 }
 
-.tl-base-container{
+.wd-base-container{
   max-width: 77.6rem;
   width: 100%;
   margin: 0 auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
 }
 
 
@@ -207,6 +207,10 @@ html {
   min-width: 19rem;
 }
 
+
+p > strong{
+  font-weight: 700;
+}
 
 @media (min-width: 120.0625rem) {
   html {
@@ -270,4 +274,28 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+/*==========================================================
+                     what we expect
+===========================================================*/
+.wd-coktail-content-wrapper{
+  max-width: 70rem;
+  margin: 0 auto;
+  border-radius: 3rem;
+}
+
+.cocktacil-product-img{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.cocktail-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.3125rem;
+  color: var(--site-secondary-color);
 }
