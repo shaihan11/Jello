@@ -13,21 +13,35 @@
 </head>
 <body>
     <!-- header start -->
-    <header class="site-header bg-site-secondary h-[52px] md:h-[80px] lg:h-[100px]">
+    <header class="wd-site-header bg-site-secondary h-[52px] md:h-[80px] lg:h-[100px]">
 
     </header>
     <!-- header end -->
 
 
     <!-- home banner start -->
-    <section class="home-banner">
-        <div class="home-banner-img">
-            <img class="w-full h-full hidden md:block object-cover" src="assets/home-banner.png" alt="home banner">
-            <img class="w-full h-full block md:hidden object-cover" src="assets/home-banner-mobile.png" alt="home banner">
+    <section class="wd-home-banner">
+        <div class="wd-home-banner-img md:h-screen w-full">
+            <picture>
+                <source media="(min-width:768px)" srcset="assets/home-banner.png">
+                <img src="assets/home-banner-mobile.png" alt="home banner" class="w-full h-full object-left object-cover" loading="lazy">
+            </picture>
         </div>
     </section>
     <!-- home banner end -->
 
+
+    <!-- what we expect start -->
+     <section class="wd-what-we-expect pt-[15px] bg-[#F3D2D2]">
+        <div class="wd-base-container">
+            <h2 class="wd-section-headline">What to Expect:</h2>
+            <p class="text-[1.015625rem] leading-[1] tracking-normal text-center mt-[7px]">From <strong>consistent Use</strong> of America’s #1 Inside-Out Skincare Supplement</p>
+            <div class="wd-what-we-expect-content">
+                
+            </div>
+        </div>        
+     </section>
+    <!-- what we expect end -->
 
 
 
@@ -50,6 +64,6 @@
     <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
 
     <!-- main js -->
-    <script src="assets/main.js"></script>
+    <script src="assets/wd-main.js"></script>
 </body>
 </html>

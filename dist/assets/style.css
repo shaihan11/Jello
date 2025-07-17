@@ -574,6 +574,10 @@ video {
   position: relative;
 }
 
+.mt-\[7px\] {
+  margin-top: 7px;
+}
+
 .block {
   display: block;
 }
@@ -622,9 +626,39 @@ video {
   background-color: var(--site-secondary-color);
 }
 
+.bg-\[\#F3D2D2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 210 210 / var(--tw-bg-opacity, 1));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.pt-\[15px\] {
+  padding-top: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[1\.015625rem\] {
+  font-size: 1.015625rem;
+}
+
+.leading-\[1\] {
+  line-height: 1;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .blur {
@@ -653,15 +687,15 @@ video {
 
   font-weight: 400;
 
-  src: url('../fonts/poppins-v23-latin-regular.eot');
+  src: url('poppins-v23-latin-regular.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/poppins-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/poppins-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/poppins-v23-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/poppins-v23-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/poppins-v23-latin-regular.svg#Poppins') format('svg');
+  src: url('poppins-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('poppins-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('poppins-v23-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('poppins-v23-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('poppins-v23-latin-regular.svg#Poppins') format('svg');
 
   /* Legacy iOS */
 }
@@ -679,15 +713,15 @@ video {
 
   font-weight: 500;
 
-  src: url('../fonts/poppins-v23-latin-500.eot');
+  src: url('poppins-v23-latin-500.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/poppins-v23-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/poppins-v23-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/poppins-v23-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/poppins-v23-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/poppins-v23-latin-500.svg#Poppins') format('svg');
+  src: url('poppins-v23-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('poppins-v23-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('poppins-v23-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('poppins-v23-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('poppins-v23-latin-500.svg#Poppins') format('svg');
 
   /* Legacy iOS */
 }
@@ -705,15 +739,15 @@ video {
 
   font-weight: 600;
 
-  src: url('../fonts/poppins-v23-latin-600.eot');
+  src: url('poppins-v23-latin-600.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/poppins-v23-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/poppins-v23-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/poppins-v23-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/poppins-v23-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/poppins-v23-latin-600.svg#Poppins') format('svg');
+  src: url('poppins-v23-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('poppins-v23-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('poppins-v23-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('poppins-v23-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('poppins-v23-latin-600.svg#Poppins') format('svg');
 
   /* Legacy iOS */
 }
@@ -731,15 +765,15 @@ video {
 
   font-weight: 700;
 
-  src: url('../fonts/poppins-v23-latin-700.eot');
+  src: url('poppins-v23-latin-700.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/poppins-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/poppins-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/poppins-v23-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/poppins-v23-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/poppins-v23-latin-700.svg#Poppins') format('svg');
+  src: url('poppins-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('poppins-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('poppins-v23-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('poppins-v23-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('poppins-v23-latin-700.svg#Poppins') format('svg');
 
   /* Legacy iOS */
 }
@@ -757,15 +791,15 @@ video {
 
   font-weight: 400;
 
-  src: url('../fonts/dm-sans-v16-latin-regular.eot');
+  src: url('dm-sans-v16-latin-regular.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/dm-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/dm-sans-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/dm-sans-v16-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/dm-sans-v16-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/dm-sans-v16-latin-regular.svg#DMSans') format('svg');
+  src: url('dm-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dm-sans-v16-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('dm-sans-v16-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('dm-sans-v16-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('dm-sans-v16-latin-regular.svg#DMSans') format('svg');
 
   /* Legacy iOS */
 }
@@ -783,15 +817,15 @@ video {
 
   font-weight: 500;
 
-  src: url('../fonts/dm-sans-v16-latin-500.eot');
+  src: url('dm-sans-v16-latin-500.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/dm-sans-v16-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/dm-sans-v16-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/dm-sans-v16-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/dm-sans-v16-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/dm-sans-v16-latin-500.svg#DMSans') format('svg');
+  src: url('dm-sans-v16-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dm-sans-v16-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('dm-sans-v16-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('dm-sans-v16-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('dm-sans-v16-latin-500.svg#DMSans') format('svg');
 
   /* Legacy iOS */
 }
@@ -809,15 +843,15 @@ video {
 
   font-weight: 600;
 
-  src: url('../fonts/dm-sans-v16-latin-600.eot');
+  src: url('dm-sans-v16-latin-600.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/dm-sans-v16-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/dm-sans-v16-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/dm-sans-v16-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/dm-sans-v16-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/dm-sans-v16-latin-600.svg#DMSans') format('svg');
+  src: url('dm-sans-v16-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dm-sans-v16-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('dm-sans-v16-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('dm-sans-v16-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('dm-sans-v16-latin-600.svg#DMSans') format('svg');
 
   /* Legacy iOS */
 }
@@ -835,15 +869,67 @@ video {
 
   font-weight: 700;
 
-  src: url('../fonts/dm-sans-v16-latin-700.eot');
+  src: url('dm-sans-v16-latin-700.eot');
 
   /* IE9 Compat Modes */
 
-  src: url('../fonts/dm-sans-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/dm-sans-v16-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/dm-sans-v16-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/dm-sans-v16-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/dm-sans-v16-latin-700.svg#DMSans') format('svg');
+  src: url('dm-sans-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dm-sans-v16-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('dm-sans-v16-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('dm-sans-v16-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('dm-sans-v16-latin-700.svg#DMSans') format('svg');
+
+  /* Legacy iOS */
+}
+
+/* karla-regular - latin */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Karla';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url('karla-v32-latin-regular.eot');
+
+  /* IE9 Compat Modes */
+
+  src: url('karla-v32-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('karla-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('karla-v32-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('karla-v32-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('karla-v32-latin-regular.svg#Karla') format('svg');
+
+  /* Legacy iOS */
+}
+
+/* karla-500 - latin */
+
+@font-face {
+  font-display: swap;
+
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+
+  font-family: 'Karla';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url('karla-v32-latin-500.eot');
+
+  /* IE9 Compat Modes */
+
+  src: url('karla-v32-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('karla-v32-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('karla-v32-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('karla-v32-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('karla-v32-latin-500.svg#Karla') format('svg');
 
   /* Legacy iOS */
 }
@@ -855,15 +941,28 @@ video {
 :root{
   --site-primary-color: #000000;
   --site-secondary-color: #FFFFFF;
-  --primary-font: 'Poppins', serif;
-  --secondary-font: 'DM Sans', serif;
+  --primary-font: 'DM Sans', serif;
+  --secondary-font: 'Poppins', serif;
+  --third-font: 'Karla', serif;
 }
 
 /*==========================================================
                         common css
 ===========================================================*/
 
-.base-container{
+body{
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: var(--site-primary-color);
+}
+
+html {
+  font-size: 100%;
+}
+
+.tl-base-container{
   max-width: 77.6rem;
   width: 100%;
   margin: 0 auto;
@@ -871,9 +970,36 @@ video {
   padding-right: 1.25rem;
 }
 
-.tl-full-height {
-  height: 100vh;
-  height: 100svh;
+.wd-section-headline{
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.7625rem;
+  line-height: 1.7625rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media (min-width: 120.0625rem) {
+  html {
+    font-size: 120%;
+  }
+
+  .base-container {
+    max-width: 90rem;
+  }
+}
+
+@media (min-width: 156.25rem) {
+  html {
+    font-size: 130%;
+  }
+}
+
+@media (min-width: 218.75rem) {
+  html {
+    font-size: 140%;
+  }
 }
 
 /*==========================================================
@@ -884,30 +1010,23 @@ video {
                      home banner
 ===========================================================*/
 
+/*==========================================================
+                     what we expect
+===========================================================*/
+
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-\[80px\] {
     height: 80px;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:h-\[100px\] {
     height: 100px;
   }
 }
+
