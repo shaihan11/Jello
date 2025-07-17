@@ -4,38 +4,30 @@
 
         // product timeline animation
         $(window).on('scroll', function() {
-            var wrapper = $('.product-timeline-wrapper');
-            var wrapperTop = wrapper.offset().top;
-            var wrapperHeight = wrapper.outerHeight();
-            var windowHeight = $(window).height();
-            var scrollTop = $(window).scrollTop();
-
-            var distance = scrollTop + windowHeight - wrapperTop;
-            var percent = distance / wrapperHeight;
-
-            // Limit to 0–1
-            percent = Math.max(0, Math.min(1, percent));
-
-            // Set .timeline-line height
-            wrapper.find('.timeline-line').css({
-                height: (percent * 100) + '%'
-            });
-
-            // Add active class to each .single-timeline
             $('.single-timeline').each(function() {
-                var elTop = $(this).offset().top;
-                var elHeight = $(this).outerHeight();
-                var distance = scrollTop + windowHeight - elTop;
-                var elPercent = distance / elHeight;
+                var $this = $(this);
+                var elementTop = $this.offset().top;
+                var elementHeight = $this.outerHeight();
+                var windowHeight = $(window).height();
+                var scrollTop = $(window).scrollTop();
 
-                if (elPercent > 5) {
-                $(this).addClass('active');
+                if (scrollTop + windowHeight >= elementTop + (elementHeight * 3)) {
+                    if (!$this.hasClass('active')) {
+                        $this.addClass('active');
+                        $this.find('.timeline-line').stop().animate({
+                            height: '100%'
+                        }, 600); // adjust duration as needed
+                    }
                 } else {
-                $(this).removeClass('active');
+                    if ($this.hasClass('active')) {
+                        $this.removeClass('active');
+                        $this.find('.timeline-line').stop().animate({
+                            height: '0%'
+                        }, 300);
+                    }
                 }
             });
         });
-
 
 
 

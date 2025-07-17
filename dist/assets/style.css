@@ -1321,7 +1321,7 @@ p > strong{
   border-radius: 50%;
   background-color: #686868;
   transform: translate(-50%, -50%);
-  transition: .3s ease-in;
+  transition: .5s ease-in;
   z-index: 20;
 }
 
@@ -1344,7 +1344,7 @@ p > strong{
   top: 8px;
   left: 1.5rem;
   width: .0425rem;
-  height: 100%;
+  /* height: 100%; */
   background-color: #42AAFF;
   z-index: 2;
   display: block;
@@ -1353,6 +1353,7 @@ p > strong{
 
 .single-timeline.active:before{
   background-color: #42AAFF;
+  transition: .5s ease-in;
 }
 
 /* featured product */
@@ -1380,6 +1381,16 @@ p > strong{
   line-height: 1.2;
   letter-spacing: 0;
   text-align: center;
+}
+
+@media (min-width: 1366px) {
+  .single-timeline p{
+    font-size: 1rem;
+  }
+
+  .single-timeline h3{
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1456,5 +1467,15 @@ p > strong{
   .lg\:px-\[2rem\] {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-\[\.8rem\] {
+    font-size: .8rem;
+  }
+
+  .xl\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 }
