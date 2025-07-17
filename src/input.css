@@ -203,7 +203,6 @@ html {
   box-shadow: 0rem 0.109375rem 0.21875rem 0rem #00000040;
   border-radius: 0.81875rem;
   padding: 0.69rem 1.471rem;
-  transition: .3s ease-in-out;
   min-width: 19rem;
 }
 
@@ -255,7 +254,6 @@ p > strong{
 }
 .wd-what-we-expect .wd-section-btn a:hover{
   background-color: #db7c84;
-  transition: .3s ease-in-out;
 }
 
 .button-list li{
@@ -318,4 +316,37 @@ p > strong{
   font-size: 0.716875rem;
   line-height: 1.2;
   letter-spacing: 0;
+}
+
+.feature-product .wd-section-btn a{
+  background: linear-gradient(90deg, #0060AE 0%, #42AAFF 100%);
+  color: var(--site-secondary-color);
+}
+
+.feature-product .wd-section-btn a:hover{
+  background: linear-gradient(1800deg, #0060AE 0%, #42AAFF 100%);
+  color: var(--site-secondary-color);
+  transition: .3s ease-in-out;
+}
+
+.featured-product-img,
+.feature-product-content{
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+.feature-product-content h3{
+  font-weight: 700;
+  font-size: 1.26625rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .featured-product-img,
+  .feature-product-content{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
