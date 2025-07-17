@@ -622,6 +622,10 @@ video {
   height: 300px;
 }
 
+.h-\[45vh\] {
+  height: 45vh;
+}
+
 .h-\[52px\] {
   height: 52px;
 }
@@ -630,28 +634,20 @@ video {
   height: 100%;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[45vh\] {
-  height: 45vh;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-\[70\%\] {
   width: 70%;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[50vh\] {
-  width: 50vh;
-}
-
 .w-auto {
   width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .resize {
@@ -743,6 +739,11 @@ video {
   padding-right: .84rem;
 }
 
+.px-\[1\.32rem\] {
+  padding-left: 1.32rem;
+  padding-right: 1.32rem;
+}
+
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -753,13 +754,12 @@ video {
   padding-bottom: 110px;
 }
 
-.px-\[1\.32rem\] {
-  padding-left: 1.32rem;
-  padding-right: 1.32rem;
-}
-
 .pb-\[10px\] {
   padding-bottom: 10px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
 }
 
 .pb-\[25px\] {
@@ -774,12 +774,12 @@ video {
   padding-left: 1.2rem;
 }
 
-.pl-\[3\.81rem\] {
-  padding-left: 3.81rem;
+.pl-\[2\.3rem\] {
+  padding-left: 2.3rem;
 }
 
-.pr-\[2rem\] {
-  padding-right: 2rem;
+.pr-\[2\.5rem\] {
+  padding-right: 2.5rem;
 }
 
 .pt-\[10px\] {
@@ -796,14 +796,6 @@ video {
 
 .pt-\[97px\] {
   padding-top: 97px;
-}
-
-.pb-\[100px\] {
-  padding-bottom: 100px;
-}
-
-.pb-\[120px\] {
-  padding-bottom: 120px;
 }
 
 .text-center {
@@ -1311,6 +1303,52 @@ p > strong{
   line-height: 1.2;
   letter-spacing: 0;
 }
+
+.single-timeline::before{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 1.5rem;
+  width: .59625rem;
+  height: .59625rem;
+  border-radius: 50%;
+  background-color: #686868;
+  transform: translate(-50%, -50%);
+  transition: .3s ease-in;
+  z-index: 20;
+}
+
+.single-timeline:not(:last-child):after{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1.5rem;
+  width: .0425rem;
+  height: 100%;
+  background-color: #686868;
+  z-index: 1;
+  display: block;
+  transform: translateX(-50%);
+}
+
+.single-timeline:not(:last-child) .timeline-line{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1.5rem;
+  width: .0425rem;
+  height: 100%;
+  background-color: #42AAFF;
+  z-index: 2;
+  display: block;
+  transform: translateX(-50%);
+}
+
+.single-timeline.active:before{
+  background-color: #42AAFF;
+}
+
+/* featured product */
 
 .feature-product .wd-section-btn a{
   background: linear-gradient(90deg, #0060AE 0%, #42AAFF 100%);
