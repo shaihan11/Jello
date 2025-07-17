@@ -586,6 +586,10 @@ video {
   margin-top: 7px;
 }
 
+.mt-\[17px\] {
+  margin-top: 17px;
+}
+
 .block {
   display: block;
 }
@@ -622,12 +626,8 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.w-\[80\%\] {
-  width: 80%;
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-full {
@@ -650,12 +650,12 @@ video {
   justify-content: center;
 }
 
-.gap-\[5px\] {
-  gap: 5px;
+.gap-\[10px\] {
+  gap: 10px;
 }
 
-.gap-\[6\.4px\] {
-  gap: 6.4px;
+.gap-\[5px\] {
+  gap: 5px;
 }
 
 .overflow-hidden {
@@ -707,8 +707,16 @@ video {
   padding-bottom: 25px;
 }
 
-.pl-\[20px\] {
-  padding-left: 20px;
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
+.pl-\[1\.2rem\] {
+  padding-left: 1.2rem;
+}
+
+.pl-\[3\.81rem\] {
+  padding-left: 3.81rem;
 }
 
 .pt-\[15px\] {
@@ -725,6 +733,14 @@ video {
 
 .pt-\[97px\] {
   padding-top: 97px;
+}
+
+.pr-\[2rem\] {
+  padding-right: 2rem;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
 }
 
 .text-center {
@@ -1176,6 +1192,10 @@ p > strong{
                      what we expect
 ===========================================================*/
 
+/*==========================================================
+                     cocktail product
+===========================================================*/
+
 .wd-coktail-product-wrapper{
   max-width: 40rem;
   margin: 0 auto;
@@ -1189,6 +1209,26 @@ p > strong{
   color: var(--site-secondary-color);
 }
 
+.single-timeline:not(:last-child){
+  padding-bottom: 1rem;
+}
+
+.single-timeline h3{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.single-timeline p{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.716875rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
 @media (min-width: 768px) {
   .md\:mt-\[12px\] {
     margin-top: 12px;
@@ -1196,6 +1236,10 @@ p > strong{
 
   .md\:mt-\[15px\] {
     margin-top: 15px;
+  }
+
+  .md\:mt-\[30px\] {
+    margin-top: 30px;
   }
 
   .md\:h-\[80px\] {

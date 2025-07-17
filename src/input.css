@@ -280,6 +280,13 @@ p > strong{
 /*==========================================================
                      what we expect
 ===========================================================*/
+
+
+
+
+/*==========================================================
+                     cocktail product
+===========================================================*/
 .wd-coktail-product-wrapper{
   max-width: 40rem;
   margin: 0 auto;
@@ -291,4 +298,24 @@ p > strong{
   left: 0;
   padding: 1.3125rem;
   color: var(--site-secondary-color);
+}
+
+.single-timeline:not(:last-child){
+  padding-bottom: 1rem;
+}
+
+.single-timeline h3{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.single-timeline p{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.716875rem;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
