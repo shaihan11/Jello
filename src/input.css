@@ -186,7 +186,7 @@ html {
   font-weight: 700;
   font-style: normal;
   font-size: 1.7625rem;
-  line-height: 1.7625rem;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -293,6 +293,30 @@ p > strong{
   left: 0;
 }
 
+.timeline-date{
+  background-color: #FFE7E7;
+  border: 1px solid #CC9196;
+  border-radius: 15px;
+  padding: 5px 6.6px;
+}
+
+.timeline-date p{
+  font-family: var(--third-font);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.09375rem;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.expect-timeline-content h3{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.09375rem;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+}
 
 /*==========================================================
                      what we expect
