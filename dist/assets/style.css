@@ -579,8 +579,8 @@ video {
   margin-right: auto;
 }
 
-.mb-\[50px\] {
-  margin-bottom: 50px;
+.mb-\[10px\] {
+  margin-bottom: 10px;
 }
 
 .mt-\[15px\] {
@@ -797,6 +797,10 @@ video {
 
 .pb-\[40px\] {
   padding-bottom: 40px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
 }
 
 .pl-\[1\.2rem\] {
@@ -1300,10 +1304,17 @@ p > strong{
 }
 
 .timeline-date{
-  background-color: #FFE7E7;
-  border: 1px solid #CC9196;
+  background-color: #F3D2D2;
+  border: 1px solid #000000;
   border-radius: 15px;
   padding: 5px 6.6px;
+  transition: .3s ease-in;
+}
+
+.timeline-date.active {
+  background-color: #FFE7E7;
+  border: 1px solid #CC9196;
+  transition: .3s ease-in;
 }
 
 .timeline-date p{
@@ -1338,8 +1349,44 @@ p > strong{
   line-height: 1.45;
   letter-spacing: 0;
   text-align: center;
-  max-width: 18rem;
+  max-width: 17.9rem;
   margin: 0 auto;
+}
+
+.single-expect-timeline{
+  position: relative;
+}
+
+.single-expect-timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #000000;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.single-expect-timeline-line .line-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #CC9196;
+  transition: height 0.3s ease-out;
+}
+
+.timeline-date-wrapper{
+  position: relative;
+  z-index: 30;
+}
+
+.expect-timeline-content{
+  position: relative;
+  z-index: 30;
+  background-color: #f3d2d2;
 }
 
 /*==========================================================
@@ -1520,6 +1567,10 @@ p > strong{
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
   .lg\:h-\[100px\] {
     height: 100px;
   }
