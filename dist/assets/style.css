@@ -1253,6 +1253,16 @@ p > strong{
   }
 }
 
+@media (max-width: 383px) {
+  .wd-section-btn a{
+    font-size: 25px;
+  }
+
+  .wd-section-headline{
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 350px) {
   .wd-section-btn a{
     font-size: 20px;
@@ -1301,13 +1311,13 @@ p > strong{
   border: 1px solid #000000;
   border-radius: 15px;
   padding: 5px 6.6px;
-  transition: .3s ease-in;
+  transition: border-color .5s ease-in;
 }
 
 .timeline-date.active {
-  background-color: #FFE7E7;
+  /* background-color: #FFE7E7; */
   border: 1px solid #CC9196;
-  transition: .3s ease-in;
+  transition: border-color .5s ease-in;
 }
 
 .timeline-date p{
@@ -1382,6 +1392,27 @@ p > strong{
   background-color: #f3d2d2;
 }
 
+.timeline-date img,
+.timeline-date p{
+  z-index: 30;
+  position: relative;
+}
+
+.timeline-date {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-date .date-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFE7E7;
+  height: 0%;
+  z-index: 10;
+}
+
 /*==========================================================
                      cocktail product
 ===========================================================*/
@@ -1395,7 +1426,7 @@ p > strong{
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1.3125rem;
+  padding: .5rem 1.3125rem;
   color: var(--site-secondary-color);
 }
 

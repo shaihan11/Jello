@@ -2,13 +2,6 @@
     "use strict";
     jQuery(document).ready(function ($) {
 
-                        gsap.registerPlugin(ScrollTrigger);
-
-
-
-
-
-
         $(window).on('load scroll', function() {
             timelineAnimation1();
             timelineAnimation2();
@@ -27,40 +20,52 @@
 
                     var viewportBottom = scrollTop + windowHeight;
 
-                    // Timeline date bottom position
                     var timelineDate = timeline.find('.timeline-date-wrapper');
-                    var dateTop = timelineDate.offset().top;
+                    var timelineDateInner = timeline.find('.timeline-date');
                     var dateHeight = timelineDate.outerHeight();
-                    var dateBottom = dateTop + dateHeight;
 
-                    // Trigger point (e.g., 30% or 70% from top)
-                    var triggerPoint = scrollTop + windowHeight * 0.7;
+                    var fillableHeight = timelineHeight;
 
-                    // Fill only after date bottom crosses trigger point
-                    var diff = triggerPoint - dateBottom;
+                    // Trigger area
+                    var triggerStart = timelineTop - windowHeight * 0.7;  // Start point
+                    var triggerEnd = timelineTop + fillableHeight - windowHeight * 0.7; // End point
 
-                    // Fillable height: timeline total height minus distance from top to timeline-date bottom
-                    var fillableHeight = timelineHeight - dateHeight;
+                    var scrollPosition = scrollTop;
 
-                    var percent = 0;
+                    if (scrollPosition >= triggerStart && scrollPosition <= triggerEnd) {
+                        var progress = (scrollPosition - triggerStart) / (triggerEnd - triggerStart);
 
-                    if (diff >= 0) {
-                    percent = (diff / fillableHeight) * 100;
-                    if (percent > 100) percent = 100;
-                    } else {
-                    percent = 0;
-                    }
+                        // Date-fill: first half
+                        var dateFillProgress = Math.min(progress * 2, 1);
+                        timeline.find('.timeline-date .date-fill').css('height', (dateFillProgress * 100) + '%');
 
-                    timeline.find('.line-fill').css('height', percent + '%');
+                        // Add/remove active when date-fill 100%
+                        if (dateFillProgress >= 1) {
+                            timelineDateInner.addClass('active');
+                        } else {
+                            timelineDateInner.removeClass('active');
+                        }
 
-                    // timeline-date active toggle
-                    if (dateBottom < triggerPoint) {
-                    timeline.find('.timeline-date').addClass('active');
-                    } else {
-                    timeline.find('.timeline-date').removeClass('active');
+                        // Line-fill: second half
+                        var lineFillProgress = Math.max((progress - 0.5) * 2, 0);
+                        timeline.find('.line-fill').css('height', (lineFillProgress * 100) + '%');
+
+                    } else if (scrollPosition < triggerStart) {
+                        // Before start: reset
+                        timeline.find('.timeline-date .date-fill').css('height', '0%');
+                        timeline.find('.line-fill').css('height', '0%');
+                        timelineDateInner.removeClass('active');
+                    } else if (scrollPosition > triggerEnd) {
+                        // After end: full
+                        timeline.find('.timeline-date .date-fill').css('height', '100%');
+                        timeline.find('.line-fill').css('height', '100%');
+                        timelineDateInner.addClass('active');
                     }
                 });
+
+          
             }
+
         }
 
         // product timeline animation
@@ -115,24 +120,31 @@
 
         // product 360 rotation on scroll
         $(window).on('load resize', function () {
-
             if ($('.wd-moving-product').length) {
+                gsap.registerPlugin(ScrollTrigger);
 
-                gsap.to(".moving-product-wrapper", {
+                // Ensure ScrollTrigger refreshes on resize
+                ScrollTrigger.refresh();
+
+                // Get the window width to adjust behavior for mobile
+                const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+
+                gsap.to(".moving-product-wrapper img", {
                     rotation: 360,
                     transformOrigin: "center center",
                     ease: "none",
                     scrollTrigger: {
                         trigger: ".moving-product-wrapper",
-                        start: "bottom bottom", 
-                        end: "top top",
+                        start: isMobile ? "bottom bottom" : "top top",
+                        end: isMobile ? "top top" : "+=50%",
                         scrub: 0.5,
-                        markers: true
+                        // markers: true,
+                        // invalidateOnRefresh: true
                     }
                 });
             }
-
         });
+
 
 
 
